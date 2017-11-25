@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+	<meta charset='utf-8'/>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type='text/css'>
+	*,body{
+		font-family:'微软雅黑';
+	}
+	.navbar {
+    padding: 15px 0;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+		position:fixed;
+		top:0;
+}
+.navbar-header img{
+	width:54px;
+	height:54px;
+	float:left;
+}
+.navbar .name-logo{
+	margin-left:20px;
+	line-height:54px;
+	font-size:30px;
+	color:rgb(237,134,138);
+	float:left;
+}
+footer{
+	height:50px;
+	color: #959595;
+	line-height:50px;
+  background: #242E35;
+}
+#navbar .active{
+	border-bottom:solid 4px rgb(228,62,28); 
+}
+#navbar li:not(.active) :hover{
+	border-bottom:solid 4px rgb(228,134,158); 
+}
+
+.video-img{
+	height:400px;
+	border:1px dashed #f00;
+}
+.content section{
+	padding:105px 0 30px 0;
+}
+.content .download{
+	background:#f1f1f1;
+}
+.content .tutorial{
+	background:rgb(91,192,222);
+}
+.content .contact{
+	background:#242E35;
+	//background:rgb(179,129,59);
+}
+.contact .head{
+	color:rgb(179,129,59);
+	margin-top:30px 0px;
+}
+.contact{
+	color:#fff;
+}
+.contact .cpy{
+	padding-top:50px;
+	color:rgb(179,129,59);
+}
+
+.box {
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	background: #fff;
+}
+</style>
+<body>
+	<!--导航栏开始-->
+	<nav class="navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+					<img src='/qwt/Public/img/logo.png'/>
+					<div class="name-logo">蔷薇</div>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#download" ref='download'>下載</a></li>
+					<li><a href="#tutorial" ref='tutorial'>安装</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--导航栏结束-->
+	<!---中间内容开始--->
+	<div class="content">
+		<section id='download' class="download">
+			<div class='container'>
+				<div class='media'>
+					<div class='media-body'>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="box">
+									<h2>插件下载</h2>
+									<br/>
+									适用于非商店方式安装如UC浏览器,Chrome等,下载插件后，拖至浏览器即可完成安装。
+									<br/>
+									<br/>
+									<a href="/static/file/qw4.0.crx" target="_blank"><button class="btn btn-info">立即下载</button></a>
+									<a href="https://pan.baidu.com/s/1kVSTiDL" target="_blank"><button class="btn btn-info">备用下载</button></a>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="box">
+									<h2>商店安装</h2>
+									<br/>
+									适用于360安全浏览器，360急速浏览器可在扩展商店搜索<b>蔷薇</b>直接安装。
+									<br/>
+									<br/>
+									<a href="https://ext.chrome.360.cn/webstore/detail/ilhfgefiaklfdmnkohmmbgeceaganpoh" target="_blank"><button class="btn btn-info">360急速浏览器</button></a>
+									<a href="https://ext.se.360.cn/webstore/detail/ilhfgefiaklfdmnkohmmbgeceaganpoh" target="_blank"><button class="btn btn-info">360安全浏览器</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</section>
+		
+		<section id='tutorial' class="tutorial">
+			<div class='container'>
+				<div class='media'>
+					<div class='media-body'>
+						<h4 class='media-heading'>如何安装<span class='glyphicon glyphicon-question-sign'></span></h4>
+						
+						<h3>1.非Chrome(谷歌浏览器)</h3>
+						非谷歌Chrome浏览器(不支持IE、火狐、遨游浏览器)，可以直接将下载的插件crx文件拖至浏览器中。
+						<h3>2.Chrome谷歌浏览器</h3>
+						①解压扩展<br/>
+						将下载的扩展<b>xx.crx</b>文件改扩展后缀名为<b>xx.zip</b>并用压缩软件解压到一个文件夹中。
+						<br/>
+						注:由于windows会默认关闭扩展名显示，如果遇到改扩展名解压问题，直接下载
+						<a href="/static/file/qw.zip" target="_blank">qw.zip</a>或参考以下文章:<br/>
+						win7:<a href="https://jingyan.baidu.com/article/9080802281e294fd91c80fe4.html" target="_blank">《win7系统中如何使文件显示出扩展名》</a><br/>
+						win10:<a href="https://jingyan.baidu.com/article/f00622282564bdfbd3f0c827.html" target="_blank">《win10怎么显示文件扩展名》</a><br/><br/>
+						②打开chrome扩展中心并开启开发者模式<br/>
+						网址栏复制粘贴<b>chrome://extensions</b>回车即可打开扩展中心，勾选顶部右侧的<b>开发者模式</b>，顶部左侧即可出现<b>加载已解压扩展程序</b>按钮
+						<br/><br/>
+						③载入方式安装<br/>
+						点击加载已解压的扩展程序，选择步骤①解压的目录即可完成安装。<br/><br/>
+						④其它问题<br/>
+						如chrome弹出提示是否停用此插件，点击取消忽略即可。如插件有升级，请先卸载原来的插件，重新安装新插件<br/><br/>
+						如有问题，具体参考百度经验<a href="https://jingyan.baidu.com/article/0f5fb099cbe5486d8334ea2c.html" target="_blank">《Chrome扩展停用解决办法》</a>一文。
+					</div>
+				</div>
+			</div>
+				
+		</section>
+		<section id='contact' class="contact">
+			<div class='container'>
+				<div class='row'>
+				<div class='col-md-12 cpy'>
+					<h3 class='text-center'>©蔷薇 2015~2017</h3>
+				</div>
+				</div>
+				
+			</div>
+		</section>
+	</div>
+	<!--中间内容结束-->
+</body>
+</html>
